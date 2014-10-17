@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <tr>
+			<th>Course</th>
+			<th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+		<% @imports.each do |import| %>
+      <tr>
+        <td width="30%"><%= import.name %></td>
+        <td width="70%"><%= import.other %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
